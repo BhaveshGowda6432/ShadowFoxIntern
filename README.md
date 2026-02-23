@@ -52,29 +52,6 @@ These tasks focus on building strong Python fundamentals:
 * Pattern tracking
 * Jumping jacks interactive workout
 
-### 🔹 Dictionaries
-
-* Friend name-length tuples
-* Expense comparison using dictionaries
-
-### 🔹 File Handling
-
-* CSV data processing
-* Total and average marks calculation
-* Writing processed data to new files
-
-### 🔹 Classes & Objects
-
-* Avengers OOP implementation
-* Attributes like superpowers and weapons
-* Leader detection method
-
-### 🔹 Inheritance
-
-* MobilePhone base class
-* Apple & Samsung subclasses
-* OOP concepts using real-world modeling
-
 ---
 
 ## ⚡ Intermediate Level Projects
