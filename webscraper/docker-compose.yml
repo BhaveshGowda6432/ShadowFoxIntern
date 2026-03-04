@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  scraper:
+    build: .
+    container_name: webscraper
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+      - ./config:/app/config
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Uncomment to run specific scraper command
+    # command: ["--url", "https://shadowfox.in", "--format", "json", "csv"]
