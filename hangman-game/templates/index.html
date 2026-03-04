@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6366f1" />
+    <meta
+      name="description"
+      content="An elegant Hangman word-guessing game with a modern web interface"
+    />
+    <title>Hangman Game - Elegant Word Puzzle</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <h1>HANGMAN</h1>
+          <p class="subtitle">Guess the word before the hangman is complete</p>
+        </div>
+      </header>
+
+      <!-- Main Game Area -->
+      <main class="game-container">
+        <!-- Game Not Started -->
+        <div id="game-start" class="section active">
+          <div class="card welcome-card">
+            <h2>Welcome to Hangman</h2>
+            <p>Select your difficulty level and start guessing:</p>
+
+            <div class="difficulty-selector">
+              <button class="difficulty-btn" data-level="easy">
+                <span class="difficulty-icon">🟢</span>
+                <span class="difficulty-name">Easy</span>
+                <span class="difficulty-info">12 Attempts</span>
+              </button>
+
+              <button class="difficulty-btn" data-level="medium">
+                <span class="difficulty-icon">🟡</span>
+                <span class="difficulty-name">Medium</span>
+                <span class="difficulty-info">6 Attempts</span>
+              </button>
+
+              <button class="difficulty-btn" data-level="hard">
+                <span class="difficulty-icon">🔴</span>
+                <span class="difficulty-name">Hard</span>
+                <span class="difficulty-info">4 Attempts</span>
+              </button>
+            </div>
+
+            <div class="stats-info">
+              <p>📚 <span id="word-count">Loading...</span> words available</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Active -->
+        <div id="game-active" class="section">
+          <div class="game-content">
+            <!-- Hangman Display -->
+            <div class="game-section hangman-section">
+              <div class="hangman-display">
+                <pre id="hangman-visual" class="ascii-art">Loading...</pre>
+              </div>
+            </div>
+
+            <!-- Game Information -->
+            <div class="game-section info-section">
+              <!-- Attempts Display -->
+              <div class="attempts-display">
+                <div class="attempt-bar">
+                  <div
+                    id="attempt-progress"
+                    class="attempt-fill"
+                    style="width: 100%"
+                  ></div>
+                </div>
+                <p class="attempt-text">
+                  Attempts: <span id="remaining-attempts">6</span> /
+                  <span id="max-attempts">6</span>
+                </p>
+              </div>
+
+              <!-- Word Progress -->
+              <div class="word-display-section">
+                <h3>Word Progress</h3>
+                <div id="word-progress" class="word-progress">
+                  _ _ _ _ _ _ _
+                </div>
+                <p class="word-length">
+                  <span id="word-length">7</span> letters
+                </p>
+              </div>
+
+              <!-- Guessed Letters -->
+              <div class="guessed-section">
+                <h3>Guessed Letters</h3>
+                <div id="guessed-letters" class="guessed-letters">
+                  <span class="empty-state">None yet</span>
+                </div>
+              </div>
+
+              <!-- Game Status -->
+              <div id="game-status" class="game-status">
+                <div class="status-box">
+                  <p id="status-message" class="status-message">
+                    Let's go! Start guessing letters...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Input Section -->
+          <div class="input-section">
+            <form id="guess-form" class="guess-form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="letter-input"
+                  class="letter-input"
+                  placeholder="Enter A-Z"
+                  maxlength="1"
+                  autocomplete="off"
+                  autofocus
+                />
+                <button type="submit" class="guess-btn" id="guess-btn">
+                  Guess
+                </button>
+              </div>
+              <p class="input-hint">
+                Type a letter and press Enter or click Guess
+              </p>
+            </form>
+
+            <!-- Keyboard -->
+            <div class="keyboard-section">
+              <h4>Quick Select Letters:</h4>
+              <div id="keyboard" class="keyboard">
+                <!-- Generated by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over" class="section">
+          <div class="card game-over-card">
+            <div id="game-result">
+              <!-- Win/Loss message -->
+            </div>
+            <div class="result-buttons">
+              <button id="play-again-btn" class="btn btn-primary">
+                🔄 Play Again
+              </button>
+              <button id="home-btn" class="btn btn-secondary">
+                🏠 Back to Menu
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Hangman Game • Web Edition</p>
+        <p><small>Crafted with elegance using Python & Flask</small></p>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
