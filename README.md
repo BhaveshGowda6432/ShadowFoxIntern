@@ -8,11 +8,10 @@ The goal of this internship is to strengthen core Python skills through practica
 
 ##  Internship Overview
 
-This repository includes solutions to tasks from:
+This repository includes:
 
-* Beginner Level (Core Python)
-* Intermediate Level (Projects)
-* Advanced Level (Real-world Applications)
+* Tasks
+* Projects
 
 All tasks are implemented in Python and structured for clarity and learning.
 
