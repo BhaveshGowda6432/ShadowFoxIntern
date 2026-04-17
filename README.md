@@ -1,4 +1,4 @@
-# 🐍 ShadowFox Python Development Internship
+#  ShadowFox Python Development Internship
 
 This repository contains all the tasks completed as part of the **ShadowFox Python Development Internship**.
 
@@ -6,7 +6,7 @@ The goal of this internship is to strengthen core Python skills through practica
 
 ---
 
-## 📌 Internship Overview
+##  Internship Overview
 
 This repository includes solutions to tasks from:
 
@@ -18,7 +18,7 @@ All tasks are implemented in Python and structured for clarity and learning.
 
 ---
 
-## 🚀 Beginner Level Tasks
+## Tasks
 
 These tasks focus on building strong Python fundamentals:
 
@@ -54,13 +54,13 @@ These tasks focus on building strong Python fundamentals:
 
 ---
 
-## ⚡ Intermediate Level Projects
+## Projects
 
-### 🌐 Web Scraper
+###  Web Scraper
 
 * Data extraction using BeautifulSoup / Scrapy
 
-### 🎮 Hangman Game
+###  Hangman Game
 
 * Word guessing game
 * Interactive CLI gameplay
@@ -68,19 +68,7 @@ These tasks focus on building strong Python fundamentals:
 
 ---
 
-## 🔥 Advanced Level Projects
-
-Includes real-world data and AI-based implementations:
-
-* 📊 Cricket Fielding Analysis
-* 📈 Data Analysis using Jupyter Notebook
-* 🤖 Language Model Implementation (NLP/AI)
-
-These projects focus on analysis, visualization, and problem-solving using Python.
-
----
-
-## 🛠 Tech Stack
+##  Tech Stack
 
 * Python 3
 * CSV / File Handling
@@ -91,20 +79,7 @@ These projects focus on analysis, visualization, and problem-solving using Pytho
 
 ---
 
-## 📂 Repository Structure
-
-```
-ShadowFox/
-│
-├── Beginner/
-├── Intermediate/
-├── Advanced/
-├── README.md
-```
-
----
-
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 Through this internship, I gained experience in:
 
@@ -117,25 +92,10 @@ Through this internship, I gained experience in:
 
 ---
 
-## 📢 Proof of Work
+##  Proof of Work
 
 As part of the internship requirements:
 
 * Code uploaded to GitHub
-
----
-
-## 🤝 Acknowledgement
-
-Thanks to **ShadowFox** for providing structured tasks that helped build practical Python skills through hands-on learning.
-
----
-
-## ⭐ Support
-
-If you found this repository helpful:
-
-* ⭐ Star the repo
-* 🍴 Fork and build your own version
 
 Happy Coding! 🚀
